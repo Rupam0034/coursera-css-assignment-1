@@ -6,19 +6,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a href="#maincontent" class="skip-link">Skip to Main Content</a>
+
   <header>
     <h1>Welcome to My Website</h1>
   </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
+
+  
+  <div class="nav-wrapper">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="maincontent">
     <p>This is the home page with some intro content.</p>
+
+    <section class="grid">
+      <img src="images/andrew-tom-4GvrWSHMjuQ-unsplash.jpg" alt="Grid Image 1">
+      <img src="images/artem-sapegin-8c6eS43iq1o-unsplash.jpg" alt="Grid Image 2">
+    </section>
+
+    <section class="flex">
+      <img src="images/edoardo-bortoli-tnrrVw1Jvbg-unsplash.jpg" alt="Flex Image 1">
+      <img src="images/eli-abejo-ckCPXMiKx7o-unsplash.jpg" alt="Flex Image 2">
+    </section>
   </main>
+
   <footer>
     <p>&copy; 2025 My Website</p>
   </footer>
