@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -5,6 +6,22 @@ body {
   padding: 0;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header */
 header {
   background-color: #004080;
   color: white;
@@ -12,8 +29,17 @@ header {
   text-align: center;
 }
 
-nav {
+
+.nav-wrapper {
   background-color: #0066cc;
+  text-align: center;
+}
+
+/* Nav bar */
+nav {
+  display: inline-block;
+  width: 80%;
+  background-color: transparent;
   padding: 10px;
 }
 
@@ -24,23 +50,39 @@ nav ul {
   text-align: center;
 }
 
-nav li {
+/* Original li style (commented out for assignment) */
+/* nav li {
   display: inline-block;
   width: 100px;
   margin-right: 10px;
+} */
+
+/* New li style to make links visible and inline */
+nav li {
+  display: inline-block;
+  margin: 0 10px;
 }
 
+/* Nav links */
 nav a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
+/* Nav image (if added in the future) */
+nav img {
+  width: 10%;
+}
+
+/* Main content */
 main {
   background-color: #f2f2f2;
   font-size: 18px;
   padding: 20px;
 }
 
+/* Footer */
 footer {
   background-color: #333;
   color: white;
@@ -48,6 +90,7 @@ footer {
   padding: 10px;
 }
 
+/* Headings and paragraph */
 h1 {
   text-align: center;
   font-family: Georgia, serif;
@@ -56,4 +99,31 @@ h1 {
 
 p {
   line-height: 1.6;
+}
+
+/* Grid section */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 20px;
+  margin: 20px 0;
+}
+
+.grid img {
+  width: 100%;
+}
+
+/* Flex section */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.flex img {
+  width: 100px;
+  height: auto;
 }
